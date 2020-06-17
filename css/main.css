@@ -95,6 +95,14 @@
   margin-bottom: 10px;
   letter-spacing: 0.8px;
   border-color: #2b2d42;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#btn-invia:hover{
+  background-color: #00592e;
+}
+#btn-invia:focus {
+animation: click-invia 0.5s;
 }
 
 #btn-annulla {
@@ -105,6 +113,14 @@
   text-transform: uppercase;
   letter-spacing: 0.8px;
   border-color: #2b2d42;
+  cursor: pointer;
+}
+
+#btn-annulla:hover{
+  background-color: #c6cacc;
+}
+#btn-annulla:focus {
+animation: click-annulla 0.5s;
 }
 
 /* CSS TICKET */
@@ -147,4 +163,23 @@
  .show {
   opacity: 1;
   transition: all 0.5s;
+}
+
+
+/* animation */
+
+@keyframes click-invia {
+  0% { background-color: #00592e;}
+
+  50% { background-color: #003d20; }
+
+  100% { background-color: #00592e;}
+}
+
+@keyframes click-annulla {
+  0% { background-color: #c6cacc;}
+
+  50% { background-color: #7c7e80; }
+
+  100% { background-color: #c6cacc;}
 }
