@@ -43,7 +43,7 @@ inviaBtn.addEventListener('click', function () {
    var codiceTreno = Math.floor(Math.random()*(100000-90000) + 90000);
    var numeroCarrozza = Math.floor(Math.random()*(15-1) + 1);
 
-   // INVIARE OUTPUT SU TICKET + RENDERLO VISIBILE
+   // MOSTRARE OUTPUT SU TICKET + RENDERLO VISIBILE
 
   document.getElementById('nome-biglietto').innerHTML = nome;
   document.getElementById('codice-treno').innerHTML = codiceTreno;
@@ -54,7 +54,7 @@ inviaBtn.addEventListener('click', function () {
   document.getElementById('ticket').className = "show";
 });
 
-// ANNULLARE INPUT AL click + RENDERLO INVISIBILE
+// ANNULLARE INPUT AL click + RIRENDERLO INVISIBILE
 annullaBtn.addEventListener('click', function () {
   document.getElementById('nome').value = "";
   document.getElementById('km').value = "";

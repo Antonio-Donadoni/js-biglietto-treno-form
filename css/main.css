@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* CSS titolo */
 
 .title {
   display: flex;
@@ -26,6 +27,7 @@
   position: relative;
   height: calc(100vh - 150px);
 }
+
 .main-container::before{
   content: "";
   position: absolute;
@@ -47,15 +49,6 @@
   height: 100%;
 }
 
-.hidden {
-  opacity: 0;
-  transition: all 0.5s;
-}
-
- .show {
-  opacity: 1;
-  transition: all 0.5s;
-}
 
 .main-container h3 {
   font-size: 2.5rem;
@@ -65,19 +58,25 @@
   font-weight: bold;
   text-shadow: 1px 1px #2b2d42;
 }
+
+/* CSS FORM */
 .main-container .form {
   padding: 30px 0;
   width: 30%;
 }
+
 .form input {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .form label {
   color: #006634;
   font-size: 1.2em;
   font-weight: bold;
 }
+
+/* CSS BUTTONS */
 
 .buttons-container {
   display: flex;
@@ -87,18 +86,65 @@
   padding-left: 30px;
 }
 
+#btn-invia {
+  padding: 10px 12px;
+  background-color: #006634;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+  border-color: #2b2d42;
+}
 
-@media screen and (max-width:992px) {
+#btn-annulla {
+  padding: 5px 5px;
+  background-color: #edf2f4;
+  color: #2b2d42;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-color: #2b2d42;
+}
 
-  .main-container h3 {
-    width: 100%;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
+/* CSS TICKET */
+#ticket {
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
 
-  .main-container{
-    justify-content: center;
-    align-items: flex-start;
-  }
+#ticket table {
+  text-align: center;
+  border-collapse:collapse;
+  border: 1px solid #2b2d42;
+}
 
+#ticket thead {
+  color: #fff;
+  background-color: #006634;
+}
+
+#ticket th {
+  padding: 20px 15px;
+  min-width: 70px;
+  text-transform: uppercase;
+}
+
+#ticket tbody {
+  background-color: #fff;
+}
+
+#ticket td {
+  padding: 30px 15px;
+  font-size: 1.1rem;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+ .show {
+  opacity: 1;
+  transition: all 0.5s;
 }
