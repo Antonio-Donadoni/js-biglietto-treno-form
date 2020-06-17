@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Biglietto treno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/708faccf26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <div class="title">
+        <h1>TREBOOL</h1>
+        <h2>ACQUISTA ONLINE IL TUO BIGLIETTO</h2>
+      </div>
+
+      <div class="main-container">
+        <div class="main-container-wrapper">
+          <h3>INSERISCI I TUOI DATI</h3>
+          <div class="form">
+            <div>
+              <label for="nome">Nome: </label>
+              <input id="nome" type="text" name="nome" value="" placeholder="Inserisci il tuo nome">
+            </div>
+            <div>
+              <label for="km">Numero KM: </label>
+              <input id="km" type="number" name="km" value="" placeholder="Inserisci i Chilometri che vuoi percorrere">
+            </div>
+            <label for="fascia-eta">Seleziona la tua fascia d&#x27;et&#xE0;</label>
+            <select name="fascia-eta" id="fascia-eta">
+              <option value="Adulto">18-65</option>
+              <option value="Minorenne"> &#x3C;18 </option>
+              <option value="Over65">65+</option>
+            </select>
+          </div>
+
+          <div class="buttons-container">
+            <button id="btn-invia" type="button" name="button">Stampa Biglietto</button>
+            <button id="btn-annulla" type="button" name="button">Annulla</button>
+          </div>
+
+          <div id="ticket" class="hidden">
+            <table>
+              <thead>
+                <th>Nome</th>
+                <th>Codice Treno</th>
+                <th>Carrozza Num.</th>
+                <th>Prezzo</th>
+                <th>Fascia d&#x27;et&#xE0;</th>
+              </thead>
+              <tbody>
+                <td id="nome-biglietto"></td>
+                <td id="codice-treno" ></td>
+                <td id="numero-carrozza"></td>
+                <td id="prezzo-biglietto" ></td>
+                <td id="fascia-biglietto" > </td>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
